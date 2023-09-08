@@ -12,6 +12,9 @@
 		A160F40B2AAA9E96006D0F4D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F40A2AAA9E96006D0F4D /* ImageView.swift */; };
 		A160F40D2AAA9EA0006D0F4D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F40C2AAA9EA0006D0F4D /* MapView.swift */; };
 		A160F4112AAAAE54006D0F4D /* ActivityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A160F4102AAAAE54006D0F4D /* ActivityData.json */; };
+		A160F4132AAAB733006D0F4D /* ActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4122AAAB733006D0F4D /* ActivityList.swift */; };
+		A160F4152AAAB802006D0F4D /* ActivityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4142AAAB802006D0F4D /* ActivityRow.swift */; };
+		A160F4172AAABC74006D0F4D /* ActivityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4162AAABC74006D0F4D /* ActivityDetail.swift */; };
 		A163CA8F2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163CA8E2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift */; };
 		A163CA912AA9B3BA009B8016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163CA902AA9B3BA009B8016 /* ContentView.swift */; };
 		A163CA932AA9B3BE009B8016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A163CA922AA9B3BE009B8016 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		A160F40A2AAA9E96006D0F4D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		A160F40C2AAA9EA0006D0F4D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A160F4102AAAAE54006D0F4D /* ActivityData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ActivityData.json; sourceTree = "<group>"; };
+		A160F4122AAAB733006D0F4D /* ActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityList.swift; sourceTree = "<group>"; };
+		A160F4142AAAB802006D0F4D /* ActivityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRow.swift; sourceTree = "<group>"; };
+		A160F4162AAABC74006D0F4D /* ActivityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetail.swift; sourceTree = "<group>"; };
 		A163CA8B2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Advanced_Assignment_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163CA8E2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Advanced_Assignment_2App.swift; sourceTree = "<group>"; };
 		A163CA902AA9B3BA009B8016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +53,9 @@
 			children = (
 				A163CA8E2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift */,
 				A163CA902AA9B3BA009B8016 /* ContentView.swift */,
+				A160F4122AAAB733006D0F4D /* ActivityList.swift */,
+				A160F4142AAAB802006D0F4D /* ActivityRow.swift */,
+				A160F4162AAABC74006D0F4D /* ActivityDetail.swift */,
 				A160F40A2AAA9E96006D0F4D /* ImageView.swift */,
 				A160F40C2AAA9EA0006D0F4D /* MapView.swift */,
 			);
@@ -178,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A160F40B2AAA9E96006D0F4D /* ImageView.swift in Sources */,
+				A160F4152AAAB802006D0F4D /* ActivityRow.swift in Sources */,
 				A160F40D2AAA9EA0006D0F4D /* MapView.swift in Sources */,
+				A160F4132AAAB733006D0F4D /* ActivityList.swift in Sources */,
 				A160F4042AAA9E1E006D0F4D /* Activity.swift in Sources */,
+				A160F4172AAABC74006D0F4D /* ActivityDetail.swift in Sources */,
 				A160F4062AAA9E27006D0F4D /* ModelData.swift in Sources */,
 				A163CA912AA9B3BA009B8016 /* ContentView.swift in Sources */,
 				A163CA8F2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift in Sources */,
