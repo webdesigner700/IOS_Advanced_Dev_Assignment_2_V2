@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct ImageView: View {
+    
+    var image: Image // A stored image property is added
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        image
+            .resizable()
+            .frame(width: 300, height: 200)
+            .clipShape(Circle())
+            .overlay {
+                Circle().stroke(.white, lineWidth: 5)
+            }
+            .shadow(radius: 7)
+        
     }
 }
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView()
+        ImageView(image: Image("goldenGateBridge"))
     }
 }
