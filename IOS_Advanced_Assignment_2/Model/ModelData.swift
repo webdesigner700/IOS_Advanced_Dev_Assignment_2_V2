@@ -6,9 +6,17 @@
 //
 
 import Foundation
+import Combine
 
 
-var Activities: [Activity] = load("ActivityData.json")
+final class ModelData: ObservableObject {
+    
+    @Published var Activities: [Activity] = load("ActivityData.json")
+    
+    // Changes to the Published variable is automatically tracked
+}
+
+
 
 
 func load<T: Decodable>(_ filename: String) -> T {

@@ -27,8 +27,11 @@ struct ActivityRow: View {
 }
 
 struct ActivityRow_Previews: PreviewProvider {
+    
+    static var Activities = ModelData().Activities
+    
     static var previews: some View {
-        ActivityRow(activity: Activities[0])
+        ActivityRow(activity: ModelData().Activities[0])
             .previewLayout(.fixed(width: 300, height: 70))
     }
 }

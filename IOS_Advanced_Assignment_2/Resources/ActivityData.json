@@ -4,6 +4,7 @@
         "city": "San Francisco",
         "state": "California",
         "id": 1001,
+        "inItinerary": false,
         "coordinates": {
             "longitude": 122.4783,
             "latitude": 37.8199
@@ -17,6 +18,7 @@
         "city": "San Francisco",
         "state": "California",
         "id": 1002,
+        "inItinerary": false,
         "coordinates": {
             "longitude": 122.4230,
             "latitude": 37.8270
@@ -30,6 +32,7 @@
         "city": "San Francisco",
         "state": "California",
         "id": 1003,
+        "inItinerary": false,
         "coordinates": {
             "longitude": 122.4058,
             "latitude": 37.8024
@@ -43,6 +46,7 @@
         "city": "San Francisco",
         "state": "California",
         "id": 1004,
+        "inItinerary": false,
         "coordinates": {
             "longitude": 122.4098,
             "latitude": 37.8087

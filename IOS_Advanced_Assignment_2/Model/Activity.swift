@@ -36,4 +36,6 @@ struct Activity: Hashable, Codable, Identifiable {
         var latitude: Double
         var longitude: Double
     }
+    
+    var inItinerary: Bool
 }

@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ActivityList: View {
+    
+    @EnvironmentObject var modelData: ModelData
+    
     var body: some View {
         
         
         NavigationStack {
             
-            List(Activities) { Activity in
+            List(modelData.Activities) { Activity in
                 
                 NavigationLink(destination: ActivityDetail(activity: Activity), label: {
                     ActivityRow(activity: Activity)
@@ -27,7 +30,11 @@ struct ActivityList: View {
 }
 
 struct ActivityList_Previews: PreviewProvider {
+    
+    static let modelData = ModelData()
+    
     static var previews: some View {
         ActivityList()
+            .environmentObject(ModelData())
     }
 }

@@ -15,10 +15,14 @@
 		A160F4132AAAB733006D0F4D /* ActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4122AAAB733006D0F4D /* ActivityList.swift */; };
 		A160F4152AAAB802006D0F4D /* ActivityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4142AAAB802006D0F4D /* ActivityRow.swift */; };
 		A160F4172AAABC74006D0F4D /* ActivityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4162AAABC74006D0F4D /* ActivityDetail.swift */; };
+		A160F4192AAACA4F006D0F4D /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4182AAACA4F006D0F4D /* LocationDetail.swift */; };
+		A160F41B2AAAD7A7006D0F4D /* ItineraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F41A2AAAD7A7006D0F4D /* ItineraryList.swift */; };
+		A160F41D2AAADA2C006D0F4D /* ItineraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F41C2AAADA2C006D0F4D /* ItineraryRow.swift */; };
 		A163CA8F2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163CA8E2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift */; };
 		A163CA912AA9B3BA009B8016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163CA902AA9B3BA009B8016 /* ContentView.swift */; };
 		A163CA932AA9B3BE009B8016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A163CA922AA9B3BE009B8016 /* Assets.xcassets */; };
 		A163CA962AA9B3BE009B8016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A163CA952AA9B3BE009B8016 /* Preview Assets.xcassets */; };
+		A18908042AAAEA2300C2C3F1 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18908032AAAEA2300C2C3F1 /* Itinerary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +34,15 @@
 		A160F4122AAAB733006D0F4D /* ActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityList.swift; sourceTree = "<group>"; };
 		A160F4142AAAB802006D0F4D /* ActivityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRow.swift; sourceTree = "<group>"; };
 		A160F4162AAABC74006D0F4D /* ActivityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetail.swift; sourceTree = "<group>"; };
+		A160F4182AAACA4F006D0F4D /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
+		A160F41A2AAAD7A7006D0F4D /* ItineraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryList.swift; sourceTree = "<group>"; };
+		A160F41C2AAADA2C006D0F4D /* ItineraryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryRow.swift; sourceTree = "<group>"; };
 		A163CA8B2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Advanced_Assignment_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163CA8E2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Advanced_Assignment_2App.swift; sourceTree = "<group>"; };
 		A163CA902AA9B3BA009B8016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A163CA922AA9B3BE009B8016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A163CA952AA9B3BE009B8016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A18908032AAAEA2300C2C3F1 /* Itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +61,14 @@
 			children = (
 				A163CA8E2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift */,
 				A163CA902AA9B3BA009B8016 /* ContentView.swift */,
+				A160F4182AAACA4F006D0F4D /* LocationDetail.swift */,
 				A160F4122AAAB733006D0F4D /* ActivityList.swift */,
-				A160F4142AAAB802006D0F4D /* ActivityRow.swift */,
 				A160F4162AAABC74006D0F4D /* ActivityDetail.swift */,
+				A160F4142AAAB802006D0F4D /* ActivityRow.swift */,
 				A160F40A2AAA9E96006D0F4D /* ImageView.swift */,
 				A160F40C2AAA9EA0006D0F4D /* MapView.swift */,
+				A160F41A2AAAD7A7006D0F4D /* ItineraryList.swift */,
+				A160F41C2AAADA2C006D0F4D /* ItineraryRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +109,7 @@
 		A163CA8D2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2 */ = {
 			isa = PBXGroup;
 			children = (
+				A18908022AAAEA1100C2C3F1 /* View Model */,
 				A160F4072AAA9E50006D0F4D /* Resources */,
 				A160F4022AAA9DF5006D0F4D /* Model */,
 				A160F4012AAA9DED006D0F4D /* View */,
@@ -113,6 +125,14 @@
 				A163CA952AA9B3BE009B8016 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A18908022AAAEA1100C2C3F1 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A18908032AAAEA2300C2C3F1 /* Itinerary.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A160F41D2AAADA2C006D0F4D /* ItineraryRow.swift in Sources */,
+				A18908042AAAEA2300C2C3F1 /* Itinerary.swift in Sources */,
 				A160F40B2AAA9E96006D0F4D /* ImageView.swift in Sources */,
 				A160F4152AAAB802006D0F4D /* ActivityRow.swift in Sources */,
 				A160F40D2AAA9EA0006D0F4D /* MapView.swift in Sources */,
@@ -195,6 +217,8 @@
 				A160F4062AAA9E27006D0F4D /* ModelData.swift in Sources */,
 				A163CA912AA9B3BA009B8016 /* ContentView.swift in Sources */,
 				A163CA8F2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift in Sources */,
+				A160F4192AAACA4F006D0F4D /* LocationDetail.swift in Sources */,
+				A160F41B2AAAD7A7006D0F4D /* ItineraryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
