@@ -16,6 +16,8 @@ final class ModelData: ObservableObject {
     // Changes to the Published variable is automatically tracked
 }
 
+var Accomodations: [Accomodation] = load("AccomodationData.json")
+
 
 
 

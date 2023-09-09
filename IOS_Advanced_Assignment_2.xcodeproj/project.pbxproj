@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15131372AAC2C2700D0A4D4 /* AccomodationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15131362AAC2C2700D0A4D4 /* AccomodationList.swift */; };
 		A160F4042AAA9E1E006D0F4D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4032AAA9E1E006D0F4D /* Activity.swift */; };
 		A160F4062AAA9E27006D0F4D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4052AAA9E27006D0F4D /* ModelData.swift */; };
 		A160F40B2AAA9E96006D0F4D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F40A2AAA9E96006D0F4D /* ImageView.swift */; };
@@ -22,10 +23,14 @@
 		A163CA912AA9B3BA009B8016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163CA902AA9B3BA009B8016 /* ContentView.swift */; };
 		A163CA932AA9B3BE009B8016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A163CA922AA9B3BE009B8016 /* Assets.xcassets */; };
 		A163CA962AA9B3BE009B8016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A163CA952AA9B3BE009B8016 /* Preview Assets.xcassets */; };
-		A18908042AAAEA2300C2C3F1 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18908032AAAEA2300C2C3F1 /* Itinerary.swift */; };
+		A17959EA2AAC30E100FD383A /* AccomodationData.json in Resources */ = {isa = PBXBuildFile; fileRef = A17959E92AAC30E100FD383A /* AccomodationData.json */; };
+		A17959EC2AAC30EE00FD383A /* Accomodation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17959EB2AAC30EE00FD383A /* Accomodation.swift */; };
+		A17959EE2AAC354B00FD383A /* AccomodationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17959ED2AAC354B00FD383A /* AccomodationDetail.swift */; };
+		A17959F02AAC359700FD383A /* AccomodationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17959EF2AAC359700FD383A /* AccomodationRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A15131362AAC2C2700D0A4D4 /* AccomodationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccomodationList.swift; sourceTree = "<group>"; };
 		A160F4032AAA9E1E006D0F4D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A160F4052AAA9E27006D0F4D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A160F40A2AAA9E96006D0F4D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -42,7 +47,10 @@
 		A163CA902AA9B3BA009B8016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A163CA922AA9B3BE009B8016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A163CA952AA9B3BE009B8016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A18908032AAAEA2300C2C3F1 /* Itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
+		A17959E92AAC30E100FD383A /* AccomodationData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AccomodationData.json; sourceTree = "<group>"; };
+		A17959EB2AAC30EE00FD383A /* Accomodation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accomodation.swift; sourceTree = "<group>"; };
+		A17959ED2AAC354B00FD383A /* AccomodationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccomodationDetail.swift; sourceTree = "<group>"; };
+		A17959EF2AAC359700FD383A /* AccomodationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccomodationRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,9 @@
 				A160F40C2AAA9EA0006D0F4D /* MapView.swift */,
 				A160F41A2AAAD7A7006D0F4D /* ItineraryList.swift */,
 				A160F41C2AAADA2C006D0F4D /* ItineraryRow.swift */,
+				A15131362AAC2C2700D0A4D4 /* AccomodationList.swift */,
+				A17959ED2AAC354B00FD383A /* AccomodationDetail.swift */,
+				A17959EF2AAC359700FD383A /* AccomodationRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -77,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A160F4032AAA9E1E006D0F4D /* Activity.swift */,
+				A17959EB2AAC30EE00FD383A /* Accomodation.swift */,
 				A160F4052AAA9E27006D0F4D /* ModelData.swift */,
 			);
 			path = Model;
@@ -86,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				A160F4102AAAAE54006D0F4D /* ActivityData.json */,
+				A17959E92AAC30E100FD383A /* AccomodationData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -109,7 +122,6 @@
 		A163CA8D2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2 */ = {
 			isa = PBXGroup;
 			children = (
-				A18908022AAAEA1100C2C3F1 /* View Model */,
 				A160F4072AAA9E50006D0F4D /* Resources */,
 				A160F4022AAA9DF5006D0F4D /* Model */,
 				A160F4012AAA9DED006D0F4D /* View */,
@@ -125,14 +137,6 @@
 				A163CA952AA9B3BE009B8016 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A18908022AAAEA1100C2C3F1 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				A18908032AAAEA2300C2C3F1 /* Itinerary.swift */,
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +199,7 @@
 			files = (
 				A163CA962AA9B3BE009B8016 /* Preview Assets.xcassets in Resources */,
 				A163CA932AA9B3BE009B8016 /* Assets.xcassets in Resources */,
+				A17959EA2AAC30E100FD383A /* AccomodationData.json in Resources */,
 				A160F4112AAAAE54006D0F4D /* ActivityData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,17 +212,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A160F41D2AAADA2C006D0F4D /* ItineraryRow.swift in Sources */,
-				A18908042AAAEA2300C2C3F1 /* Itinerary.swift in Sources */,
 				A160F40B2AAA9E96006D0F4D /* ImageView.swift in Sources */,
+				A17959EE2AAC354B00FD383A /* AccomodationDetail.swift in Sources */,
 				A160F4152AAAB802006D0F4D /* ActivityRow.swift in Sources */,
 				A160F40D2AAA9EA0006D0F4D /* MapView.swift in Sources */,
 				A160F4132AAAB733006D0F4D /* ActivityList.swift in Sources */,
 				A160F4042AAA9E1E006D0F4D /* Activity.swift in Sources */,
+				A17959EC2AAC30EE00FD383A /* Accomodation.swift in Sources */,
 				A160F4172AAABC74006D0F4D /* ActivityDetail.swift in Sources */,
+				A17959F02AAC359700FD383A /* AccomodationRow.swift in Sources */,
 				A160F4062AAA9E27006D0F4D /* ModelData.swift in Sources */,
 				A163CA912AA9B3BA009B8016 /* ContentView.swift in Sources */,
 				A163CA8F2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2App.swift in Sources */,
 				A160F4192AAACA4F006D0F4D /* LocationDetail.swift in Sources */,
+				A15131372AAC2C2700D0A4D4 /* AccomodationList.swift in Sources */,
 				A160F41B2AAAD7A7006D0F4D /* ItineraryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
