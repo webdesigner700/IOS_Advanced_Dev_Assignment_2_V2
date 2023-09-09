@@ -71,15 +71,15 @@
 				A163CA902AA9B3BA009B8016 /* ContentView.swift */,
 				A160F4182AAACA4F006D0F4D /* LocationDetail.swift */,
 				A160F4122AAAB733006D0F4D /* ActivityList.swift */,
-				A160F4162AAABC74006D0F4D /* ActivityDetail.swift */,
 				A160F4142AAAB802006D0F4D /* ActivityRow.swift */,
-				A160F40A2AAA9E96006D0F4D /* ImageView.swift */,
-				A160F40C2AAA9EA0006D0F4D /* MapView.swift */,
+				A160F4162AAABC74006D0F4D /* ActivityDetail.swift */,
 				A160F41A2AAAD7A7006D0F4D /* ItineraryList.swift */,
 				A160F41C2AAADA2C006D0F4D /* ItineraryRow.swift */,
 				A15131362AAC2C2700D0A4D4 /* AccomodationList.swift */,
-				A17959ED2AAC354B00FD383A /* AccomodationDetail.swift */,
 				A17959EF2AAC359700FD383A /* AccomodationRow.swift */,
+				A17959ED2AAC354B00FD383A /* AccomodationDetail.swift */,
+				A160F40A2AAA9E96006D0F4D /* ImageView.swift */,
+				A160F40C2AAA9EA0006D0F4D /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

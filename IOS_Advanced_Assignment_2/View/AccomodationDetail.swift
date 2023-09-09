@@ -63,6 +63,6 @@ struct AccomodationDetail: View {
 
 struct AccomodationDetail_Previews: PreviewProvider {
     static var previews: some View {
-        AccomodationDetail(accomodation: Accomodations[0])
+        AccomodationDetail(accomodation: Accomodations[1])
     }
 }

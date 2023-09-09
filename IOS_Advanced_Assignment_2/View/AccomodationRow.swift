@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct AccomodationRow: View {
+    
+    var accomodation: Accomodation
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            
+            accomodation.image
+                .resizable()
+                .frame(width: 50, height: 50)
+            
+            Text(accomodation.name)
+            
+            Spacer()
+        }
     }
 }
 
 struct AccomodationRow_Previews: PreviewProvider {
     static var previews: some View {
-        AccomodationRow()
+        AccomodationRow(accomodation: Accomodations[1])
     }
 }

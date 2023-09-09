@@ -10,9 +10,9 @@ import SwiftUI
 struct AccomodationList: View {
     var body: some View {
         
-        /*NavigationStack {
+        NavigationStack {
             
-            List(Accomodation) { Accomodation in
+            List(Accomodations) { Accomodation in
                 
                 NavigationLink(destination: AccomodationDetail(accomodation: Accomodation), label: {
                     AccomodationRow(accomodation: Accomodation)
@@ -20,10 +20,8 @@ struct AccomodationList: View {
                 
                 
             }
-            .navigationTitle("Activities")
-        }*/
-        
-        Text("Testing")
+            .navigationTitle("Accomodations")
+        }
     }
 }
 
