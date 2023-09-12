@@ -34,6 +34,9 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(ModelData())
+            .environmentObject(ActivityModelData())
+            .environmentObject(AccomodationModelData())
+        
+        // The environment objects provided to the Preview provider are of the class type.
     }
 }

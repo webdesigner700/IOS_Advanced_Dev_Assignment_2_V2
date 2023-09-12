@@ -9,20 +9,19 @@ import SwiftUI
 
 struct ActivityList: View {
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var activityModelData: ActivityModelData
     
     var body: some View {
         
         
         NavigationStack {
             
-            List(modelData.Activities) { Activity in
+            List(activityModelData.Activities) { Activity in
                 
                 NavigationLink(destination: ActivityDetail(activity: Activity), label: {
                     ActivityRow(activity: Activity)
                 })
-                
-                
+  
             }
             .navigationTitle("Activities")
         }
@@ -31,10 +30,10 @@ struct ActivityList: View {
 
 struct ActivityList_Previews: PreviewProvider {
     
-    static let modelData = ModelData()
+    static let activityModelData = ActivityModelData()
     
     static var previews: some View {
         ActivityList()
-            .environmentObject(ModelData())
+            .environmentObject(ActivityModelData())
     }
 }

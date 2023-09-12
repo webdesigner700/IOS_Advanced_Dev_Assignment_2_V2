@@ -10,11 +10,11 @@ import SwiftUI
 struct ItineraryList: View {
     
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var activityModelData: ActivityModelData
     
     var filteredActivities: [Activity] {
         
-        modelData.Activities.filter {
+        activityModelData.Activities.filter {
             activity in (activity.inItinerary)
         }
     }
@@ -34,7 +34,7 @@ struct ItineraryList: View {
 struct ItineraryList_Previews: PreviewProvider {
     static var previews: some View {
         ItineraryList()
-            .environmentObject(ModelData())
+            .environmentObject(ActivityModelData())
     }
 }
 

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct AccomodationList: View {
+    
+    @EnvironmentObject var accomodationModelData: AccomodationModelData
+    
     var body: some View {
         
         NavigationStack {
             
-            List(Accomodations) { Accomodation in
+            List(accomodationModelData.Accomodations) { Accomodation in
                 
                 NavigationLink(destination: AccomodationDetail(accomodation: Accomodation), label: {
                     AccomodationRow(accomodation: Accomodation)
@@ -26,7 +29,9 @@ struct AccomodationList: View {
 }
 
 struct AccomodationList_Previews: PreviewProvider {
+    
     static var previews: some View {
         AccomodationList()
+            .environmentObject(AccomodationModelData())
     }
 }

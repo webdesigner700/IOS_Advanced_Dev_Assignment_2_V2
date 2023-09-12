@@ -10,12 +10,15 @@ import SwiftUI
 @main
 struct IOS_Advanced_Assignment_2App: App {
     
-    @StateObject private var modelData = ModelData()
+    @StateObject private var activityModelData = ActivityModelData()
+    
+    @StateObject private var accomodationModelData = AccomodationModelData()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(modelData)
+                .environmentObject(activityModelData)
+                .environmentObject(accomodationModelData)
         }
     }
 }

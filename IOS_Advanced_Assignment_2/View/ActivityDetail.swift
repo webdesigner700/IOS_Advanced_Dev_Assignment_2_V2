@@ -11,7 +11,7 @@ struct ActivityDetail: View {
     
     // This is a mutable property and it is used as a source of truth within a view. When the value of the @State property changes, SwiftUI automatically updates the view, ensuring it reflects the most recent data.
     
-    @EnvironmentObject var modelData: ModelData
+    @EnvironmentObject var activityModelData: ActivityModelData
     
     // The array of activities is received from the ModelData without having to explicitly initlaize the activity array in the preview initializer.
     
@@ -19,7 +19,7 @@ struct ActivityDetail: View {
     
     var activityIndex: Int {
         
-        modelData.Activities.firstIndex(where: { $0.id == activity.id})!
+        activityModelData.Activities.firstIndex(where: { $0.id == activity.id})!
         
         // This computes the index of the input activity by comparing it to the modelData activity array
         
@@ -65,7 +65,7 @@ struct ActivityDetail: View {
                 
                 //Just add a toggle switch here. When it is turned on, the activity gets added to the itinerary list
 
-                Toggle("Add to Itinerary", isOn: $modelData.Activities[activityIndex].inItinerary)
+                Toggle("Add to Itinerary", isOn: $activityModelData.Activities[activityIndex].inItinerary)
                     .padding()
                 
                 
@@ -90,10 +90,10 @@ struct ActivityDetail: View {
 
 struct ActivityDetail_Previews: PreviewProvider {
     
-    static let modelData = ModelData()
+    static let activityModelData = ActivityModelData()
     
     static var previews: some View {
-        ActivityDetail(activity: ModelData().Activities[0])
-            .environmentObject(modelData)
+        ActivityDetail(activity: activityModelData.Activities[0])
+            .environmentObject(activityModelData)
     }
 }

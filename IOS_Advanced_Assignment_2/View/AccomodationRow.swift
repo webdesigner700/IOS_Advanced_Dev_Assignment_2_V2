@@ -27,7 +27,12 @@ struct AccomodationRow: View {
 }
 
 struct AccomodationRow_Previews: PreviewProvider {
+    
+    static var Accomodations = AccomodationModelData().Accomodations
+    
+    // The reason this static variable is initialised in this file is becuase we want an individual accomodation data from the model data.
+    
     static var previews: some View {
-        AccomodationRow(accomodation: Accomodations[1])
+        AccomodationRow(accomodation: Accomodations[0])
     }
 }

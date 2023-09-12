@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AccomodationDetail: View {
     
+    @EnvironmentObject var accomodationModelData: AccomodationModelData
+    
     var accomodation: Accomodation
     
     var body: some View {
@@ -45,6 +47,14 @@ struct AccomodationDetail: View {
                     .padding()
                 }
                 
+                //here comes the add to itinerary button
+                
+                Button(action: {
+                    
+                }) {
+                    Text("Add to Itinerary")
+                }
+                
                 VStack(alignment: .leading) {
                     
                     Text("Description")
@@ -62,7 +72,11 @@ struct AccomodationDetail: View {
 }
 
 struct AccomodationDetail_Previews: PreviewProvider {
+    
+    static let Accomodations = AccomodationModelData().Accomodations
+    
     static var previews: some View {
         AccomodationDetail(accomodation: Accomodations[1])
+            .environmentObject(AccomodationModelData())
     }
 }

@@ -9,14 +9,18 @@ import Foundation
 import Combine
 
 
-final class ModelData: ObservableObject {
+final class ActivityModelData: ObservableObject {
     
     @Published var Activities: [Activity] = load("ActivityData.json")
     
     // Changes to the Published variable is automatically tracked
 }
 
-var Accomodations: [Accomodation] = load("AccomodationData.json")
+final class AccomodationModelData: ObservableObject {
+    
+    @Published var Accomodations: [Accomodation] = load("AccomodationData.json")
+}
+
 
 
 

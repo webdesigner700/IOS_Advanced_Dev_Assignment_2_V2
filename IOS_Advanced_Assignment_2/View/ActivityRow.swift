@@ -13,25 +13,35 @@ struct ActivityRow: View {
     
     var body: some View {
         
-        HStack {
+        HStack() {
             
             activity.image
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: 140, height: 140)
+                .cornerRadius(10)
+                .shadow(radius: 5)
             
-            Text(activity.name)
-            
-            Spacer()
+            VStack(alignment: .leading) {
+                
+                Text(activity.name)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                
+                Text(activity.city)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
         }
     }
+    
 }
 
 struct ActivityRow_Previews: PreviewProvider {
     
-    static var Activities = ModelData().Activities
+    static var Activities = ActivityModelData().Activities
     
     static var previews: some View {
-        ActivityRow(activity: ModelData().Activities[0])
-            .previewLayout(.fixed(width: 300, height: 70))
+        ActivityRow(activity: Activities[0])
+            .previewLayout(.sizeThatFits)
     }
 }
