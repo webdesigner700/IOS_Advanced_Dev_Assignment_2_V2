@@ -22,11 +22,17 @@ struct ContentView: View {
                     Image(systemName: "location.circle.fill")
                     Text("Itinerary")
                 }
+            FavouriteList()
+                .tabItem() {
+                    Image(systemName: "star.circle")
+                    Text("Favorites")
+                }
             AccomodationList()
                 .tabItem() {
                     Image(systemName: "bed.double")
                     Text("Accomodation")
                 }
+            
         }
     }
 }

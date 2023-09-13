@@ -4,6 +4,7 @@
         "district": "Downtown San Francisco",
         "city": "San Francisco",
         "id": 1001,
+        "inItinerary": false,
         "coordinates": {
             "longitude": -122.40897,
             "latitude": 37.78729
@@ -17,6 +18,7 @@
         "district": "Nob Hill",
         "city": "San Francisco",
         "id": 1002,
+        "inItinerary": false,
         "coordinates": {
             "longitude": -122.40897,
             "latitude": 37.78729
@@ -30,6 +32,7 @@
         "district": "Union Sqaure",
         "city": "San Francisco",
         "id": 1003,
+        "inItinerary": false,
         "coordinates": {
             "longitude": -122.40844,
             "latitude": 37.78967
@@ -43,6 +46,7 @@
         "district": "Financial District, San Francisco",
         "city": "San Francisco",
         "id": 1004,
+        "inItinerary": false,
         "coordinates": {
             "longitude": -122.40411,
             "latitude": 37.79544

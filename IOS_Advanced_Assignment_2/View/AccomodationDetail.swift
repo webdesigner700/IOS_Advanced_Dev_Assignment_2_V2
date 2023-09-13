@@ -13,6 +13,14 @@ struct AccomodationDetail: View {
     
     var accomodation: Accomodation
     
+    var accomodationIndex: Int {
+    
+        accomodationModelData.Accomodations.firstIndex(where: {$0.id == accomodation.id})!
+        
+    }
+    
+    @State private var isPresentingMessage: Bool = false
+    
     var body: some View {
         
         NavigationStack {
@@ -47,13 +55,39 @@ struct AccomodationDetail: View {
                     .padding()
                 }
                 
-                //here comes the add to itinerary button
-                
-                Button(action: {
-                    
-                }) {
-                    Text("Add to Itinerary")
+                HStack {
+                    Button(action: {
+                            
+                            
+                        isPresentingMessage = true
+                            
+                        accomodationModelData.Accomodations[accomodationIndex].inItinerary.toggle()
+                        
+                        
+                    }) {
+                        HStack {
+                            Image(systemName: "plus.circle")
+                            
+                            Text("Add to Favourites")
+                                .fontWeight(.semibold)
+                                .font(.title2)
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 8)
+                    .alert(isPresented: $isPresentingMessage, content: {
+                        Alert(
+                            title: Text("Added"),
+                            message: Text("You have successfully added this accomodation to your itinerary"),
+                            dismissButton: .default(Text("OK"))
+                        )
+                        
+                    })
                 }
+                .background(
+                    Rectangle()
+                        .stroke(Color.blue, lineWidth: 2) // Stroke style
+                )
                 
                 VStack(alignment: .leading) {
                     
@@ -68,6 +102,7 @@ struct AccomodationDetail: View {
                 .padding()
             }
         }
+        
     }
 }
 

@@ -13,15 +13,25 @@ struct AccomodationRow: View {
     
     var body: some View {
         
-        HStack {
+        HStack() {
             
             accomodation.image
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: 140, height: 140)
+                .cornerRadius(10)
+                .shadow(radius: 5)
             
-            Text(accomodation.name)
             
-            Spacer()
+            VStack(alignment: .leading) {
+                
+                Text(accomodation.name)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                
+                Text(accomodation.district)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
         }
     }
 }
@@ -33,6 +43,6 @@ struct AccomodationRow_Previews: PreviewProvider {
     // The reason this static variable is initialised in this file is becuase we want an individual accomodation data from the model data.
     
     static var previews: some View {
-        AccomodationRow(accomodation: Accomodations[0])
+        AccomodationRow(accomodation: Accomodations[1])
     }
 }

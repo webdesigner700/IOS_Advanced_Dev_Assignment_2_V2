@@ -19,17 +19,32 @@ struct ItineraryList: View {
         }
     }
     
+    
     var body: some View {
         
-      
-        List(filteredActivities) {
-            Activity in
-                ActivityRow(activity: Activity)
+        NavigationView {
             
+            List(filteredActivities) {
+                activity in
+                ActivityRow(activity: activity)
+            }
+            .navigationTitle("Itinerary Activities")
+        }
+    }
+    
+    func inItinerary(accomodation: Accomodation) -> Bool {
+        
+        
+        if accomodation.inItinerary == true {
+            
+            return true
         }
         
+        return false
     }
 }
+    
+    // Instead of this make a function which whether the inItinerary property is true or not for the given accomodation parameter
 
 struct ItineraryList_Previews: PreviewProvider {
     static var previews: some View {
@@ -38,4 +53,4 @@ struct ItineraryList_Previews: PreviewProvider {
     }
 }
 
-// Usa a toggle switch to represent whether a user has added an activity to their itinerary list. 
+// Use a toggle switch to represent whether a user has added an activity to their itinerary list.

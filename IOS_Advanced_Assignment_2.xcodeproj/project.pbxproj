@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A15131372AAC2C2700D0A4D4 /* AccomodationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15131362AAC2C2700D0A4D4 /* AccomodationList.swift */; };
+		A15876602AB1905D00244F90 /* FavouriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A158765F2AB1905D00244F90 /* FavouriteList.swift */; };
 		A160F4042AAA9E1E006D0F4D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4032AAA9E1E006D0F4D /* Activity.swift */; };
 		A160F4062AAA9E27006D0F4D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F4052AAA9E27006D0F4D /* ModelData.swift */; };
 		A160F40B2AAA9E96006D0F4D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A160F40A2AAA9E96006D0F4D /* ImageView.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		A15131362AAC2C2700D0A4D4 /* AccomodationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccomodationList.swift; sourceTree = "<group>"; };
+		A158765F2AB1905D00244F90 /* FavouriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteList.swift; sourceTree = "<group>"; };
 		A160F4032AAA9E1E006D0F4D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A160F4052AAA9E27006D0F4D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A160F40A2AAA9E96006D0F4D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				A17959EF2AAC359700FD383A /* AccomodationRow.swift */,
 				A17959ED2AAC354B00FD383A /* AccomodationDetail.swift */,
 				A160F41A2AAAD7A7006D0F4D /* ItineraryList.swift */,
+				A158765F2AB1905D00244F90 /* FavouriteList.swift */,
 				A160F40A2AAA9E96006D0F4D /* ImageView.swift */,
 				A160F40C2AAA9EA0006D0F4D /* MapView.swift */,
 			);
@@ -223,6 +226,7 @@
 				A160F4192AAACA4F006D0F4D /* LocationDetail.swift in Sources */,
 				A15131372AAC2C2700D0A4D4 /* AccomodationList.swift in Sources */,
 				A160F41B2AAAD7A7006D0F4D /* ItineraryList.swift in Sources */,
+				A15876602AB1905D00244F90 /* FavouriteList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
