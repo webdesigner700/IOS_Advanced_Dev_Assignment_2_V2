@@ -9,19 +9,17 @@ import SwiftUI
 import MapKit
 
 struct LocationDetail: View {
+    
     var body: some View {
         
         NavigationStack {
             
-            
-            VStack {
+            ScrollView(.vertical) {
                 
-                ScrollView {
-                    
-                    
+                VStack(spacing: 16) {
                     
                     MapView(coordinate: CLLocationCoordinate2D(latitude: 37.773972, longitude: -122.431297))
-                        .frame(height: 300)
+                        .frame(height: 250)
                         .ignoresSafeArea(edges: .top)
                     
                     ImageView(image: Image("sanFrancisco"))
@@ -31,43 +29,59 @@ struct LocationDetail: View {
                     VStack() {
                         
                         Text("San Francisco")
-                            .font(.title)
+                            .font(.largeTitle)
                             .fontWeight(.bold)
-                            .padding(.vertical, 9.0)
+                            .padding(.vertical, 5)
                         
                         HStack {
                             Text("California")
-                                .font(.title2)
+                                .font(.headline)
                             
                             Spacer()
                             
                             Text("USA")
-                                .font(.title2)
+                                .font(.headline)
                             
                         }
-                        .padding()
+                        .padding(.horizontal, 16)
                     }
                     
                     NavigationLink(destination: ActivityList(), label: {
-                        Text("Show Activities")
+                        
+                        
+                        HStack {
+                            Image(systemName: "figure.run.square.stack.fill")
+                            Text("Show Activities")
+                        }
                     })
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 8)
                     .frame(height: 40.0)
+                    .fontWeight(.semibold)
+                    .font(.title2)
+                    .background(
+                        Rectangle()
+                            .stroke(Color.blue, lineWidth: 2) // Stroke style
+                    )
                     
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .leading, spacing: 8) {
                         
                         Text("Description")
                             .font(.title3)
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("San Francisco, officially the City and County of San Francisco, is the commercial, financial, and cultural center of Northern California. The city proper is the fourth most populous city in California, with 808,437 residents, and the 17th most populous city in the United States as of 2022. The city covers a land area of 46.9 square miles (121 square kilometers) at the end of the San Francisco Peninsula, making it the second most densely populated large U.S. city after New York City and the fifth-most densely populated U.S. county, behind only four of the five New York City boroughs. Among the 91 U.S. cities proper with over 250,000 residents, San Francisco was ranked first by per capita income[25] and sixth by aggregate income as of 2021. Colloquial nicknames for San Francisco include Frisco, San Fran, The City, and SF.")
+                        Text("San Francisco, officially the City and County of San Francisco, is the commercial, financial, and cultural center of Northern California. The city proper is the fourth most populous city in California, with 808,437 residents, and the 17th most populous city in the United States as of 2022.")
                             .font(.body)
                     }
                     .padding()
-                    
-                    
+                    .background(
+                        Rectangle()
+                            .fill(Color(hue: 0.678, saturation: 0.08, brightness: 0.861)) // Stroke style
+                    )
                 }
             }
+            
         }
     }
 }

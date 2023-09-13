@@ -25,35 +25,36 @@ struct AccomodationDetail: View {
         
         NavigationStack {
             
-            VStack {
+            VStack(spacing: 16) {
                 
                 MapView(coordinate: accomodation.accomodationCoordinate)
-                    .frame(height: 300)
-                    .ignoresSafeArea(edges: .top)
+                    .frame(height: 200)
+                    .cornerRadius(16)
                 
                 ImageView(image: accomodation.image)
                     .offset(y: -120)
-                    .padding(.bottom, -130)
+                    .padding(.bottom, -120)
                 
                 VStack() {
                     
                     Text(accomodation.name)
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
-                        .padding(.vertical, 9.0)
+                        .padding(.vertical, 5)
                     
                     HStack {
                         Text(accomodation.district)
-                            .font(.title2)
+                            .font(.headline)
                         
                         Spacer()
                         
                         Text(accomodation.city)
-                            .font(.title2)
+                            .font(.headline)
                         
                     }
-                    .padding()
+                    .padding([.leading, .bottom, .trailing], 12)
                 }
+                .padding(.horizontal, 16)
                 
                 HStack {
                     Button(action: {
@@ -75,6 +76,9 @@ struct AccomodationDetail: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
+                    .frame(height: 40.0)
+                    .fontWeight(.semibold)
+                    .font(.title2)
                     .alert(isPresented: $isPresentingMessage, content: {
                         Alert(
                             title: Text("Added"),
@@ -89,7 +93,7 @@ struct AccomodationDetail: View {
                         .stroke(Color.blue, lineWidth: 2) // Stroke style
                 )
                 
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 8) {
                     
                     Text("Description")
                         .font(.title3)
@@ -100,9 +104,14 @@ struct AccomodationDetail: View {
                         .font(.body)
                 }
                 .padding()
+                .background(
+                    Rectangle()
+                        .fill(Color(hue: 0.678, saturation: 0.08, brightness: 0.861))
+                )
             }
+            
+            .navigationBarTitle("Accomodation Details", displayMode: .inline)
         }
-        
     }
 }
 
@@ -111,7 +120,7 @@ struct AccomodationDetail_Previews: PreviewProvider {
     static let Accomodations = AccomodationModelData().Accomodations
     
     static var previews: some View {
-        AccomodationDetail(accomodation: Accomodations[1])
+        AccomodationDetail(accomodation: Accomodations[2])
             .environmentObject(AccomodationModelData())
     }
 }

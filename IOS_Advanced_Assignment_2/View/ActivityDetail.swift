@@ -36,43 +36,56 @@ struct ActivityDetail: View {
             VStack {
                 
                 MapView(coordinate: activity.activityCoordinate)
-                    .frame(height: 300)
+                    .frame(height: 280)
                     .ignoresSafeArea(edges: .top)
+                    .cornerRadius(16)
                 
                 ImageView(image: activity.image)
                     .offset(y: -120)
                     .padding(.bottom, -130)
                 
-                VStack() {
+                VStack(spacing: 8) {
                     
                     Text(activity.name)
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
-                        .padding(.vertical, 9.0)
+                        .padding(.vertical, 5)
                     
                     HStack {
                         Text(activity.city)
-                            .font(.title2)
+                            .font(.headline)
                         
                         Spacer()
                         
                         Text(activity.state)
-                            .font(.title2)
+                            .font(.headline)
                         
                     }
-                    .padding()
+                    .padding(.horizontal, 16)
                 }
+                .padding(.horizontal, 16)
+                
                 
                 //Just add a toggle switch here. When it is turned on, the activity gets added to the itinerary list
 
-                Toggle("Add to Itinerary", isOn: $activityModelData.Activities[activityIndex].inItinerary)
-                    .padding()
+                Toggle(isOn: $activityModelData.Activities[activityIndex].inItinerary) {
+                    Text("Add to Itinerary")
+                        .fontWeight(.semibold)
+                        .padding(.horizontal, 16)
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 8)
+                .background(
+                    Rectangle()
+                        .stroke(Color.blue, lineWidth: 2) // Stroke style
+                        .padding(.horizontal, 16)
+                    ) // IMPROVE THIS
                 
                 
                 // The isOn property of the Toggle is binded to the inItinerary property of the modelData Activity array
                 
                 
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 8) {
                     
                     Text("Description")
                         .font(.title3)
@@ -82,8 +95,10 @@ struct ActivityDetail: View {
                     Text(activity.description)
                         .font(.body)
                 }
-                .padding()
+                .padding(.horizontal, 16)
+                
             }
+            .navigationBarTitle("Activity Details", displayMode: .inline)
         }
     }
 }

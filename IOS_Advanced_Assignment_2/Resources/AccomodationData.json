@@ -9,7 +9,7 @@
             "longitude": -122.40897,
             "latitude": 37.78729
         },
-        "description": "This San Francisco hotel is located in Union Square, a 5-minute walk from the Powell Street cable car line. It offers an outdoor pool and rooms with an MP3 connection.Guests will also have access to an on-site fitness center and dry sauna. Each classically-designed room at the Union Square Handlery is equipped with a flat-screen cable TV and mini-refrigerator. Free coffee and tea are also provided in every room. Some rooms offer balconies with views of the city or pool. The Moscone Convention Center and The Museum of Modern Art are 5 blocks from the Handlery in San Francisco. The Aquarium of the Bay is less than 1 mile (1.6 km) from the hotel.",
+        "description": "This San Francisco hotel is located in Union Square, a 5-minute walk from the Powell Street cable car line. It offers an outdoor pool and rooms with an MP3 connection.Guests will also have access to an on-site fitness center and dry sauna. Each classically-designed room at the Union Square Handlery is equipped with a flat-screen cable TV and mini-refrigerator.",
         "imageName": "handleryUnionSquare"
     },
     
@@ -23,12 +23,12 @@
             "longitude": -122.40897,
             "latitude": 37.78729
         },
-        "description": "Just 10 minutes' walk from Union Square and the Financial District, this luxury hotel offers on-site dining. A fitness centre is also available. Rooms at The Ritz-Carlton, San Francisco offer a flat-screen TV. En suite bathrooms include an Italian marble bath tub, complimentary luxury soap and shampoo products, bathrobes and slippers. In room dining is available 24/7. Guests of The Ritz-Carlton can enjoy exclusive amenities on The Club Level, which features all-day food and beverage services as well as a full-service concierge to assist with any requests. The Lounge offers a large collection of single malt scotch. Contemporary American cuisine is served at the restaurant Parallel 37, which is located in the hotel lobby. In-room dining is also available. San Francisco International Airport is 24 km away from this hotel. Chinatown is just 5 minutes' walk away.  San Francisco's North Beach neighbourhood is 3 km away from The Ritz-Carlton, San Francisco.",
+        "description": "Just 10 minutes' walk from Union Square and the Financial District, this luxury hotel offers on-site dining. A fitness centre is also available. Rooms at The Ritz-Carlton, San Francisco offer a flat-screen TV. En suite bathrooms include an Italian marble bath tub, complimentary luxury soap and shampoo products, bathrobes and slippers.",
         "imageName": "theRitzCarlton"
     },
     
     {
-        "name": "San Francisco Marriot Union Sqaure",
+        "name": "Marriot Union Sqaure",
         "district": "Union Sqaure",
         "city": "San Francisco",
         "id": 1003,
@@ -37,12 +37,12 @@
             "longitude": -122.40844,
             "latitude": 37.78967
         },
-        "description": "This hotel, located in the center of San Francisco, is 0.7 miles from both the Moscone Center and the Financial District. It offers a well-equipped fitness centre and chic, modern rooms. All guest rooms include a HDTV and MP3 dock. Tea and coffee making facilities are offered with each room of San Francisco Marriott Union Square. A 24-hour front desk service is available from San Francisco Marriott Union Square. WiFi access is provided throughout the hotel. Marriott Union Square’s restaurant serves a range of regional and international meals. The hotel’s bar, bin480, offers cocktails and refreshing beverages. Alcatraz Island is 2 miles from Marriott Union Square San Francisco.",
+        "description": "This hotel, located in the center of San Francisco, is 0.7 miles from both the Moscone Center and the Financial District. It offers a well-equipped fitness centre and chic, modern rooms. All guest rooms include a HDTV and MP3 dock. Tea and coffee making facilities are offered with each room of San Francisco Marriott Union Square.",
         "imageName": "marriotUnionSquare"
     },
     
     {
-        "name": "Hilton San Francisco Financial District",
+        "name": "Hilton Financial District",
         "district": "Financial District, San Francisco",
         "city": "San Francisco",
         "id": 1004,
@@ -51,7 +51,7 @@
             "longitude": -122.40411,
             "latitude": 37.79544
         },
-        "description": "Located in the heart of downtown San Francisco, this Hilton is conveniently situated crossroads of the Financial District, Chinatown, and North Beach. It features an on-site restaurant and bar and an award-winning concierge service. A coffee machine and a 55-inch flat-screen smart TV is included all of the air-conditioned rooms at Hilton San Francisco Financial District. Each room is furnished with a large work desk and an ergonomic desk chair. The on-site restaurant, 750 Restaurant and Bar, serves diverse cuisine with a California influence. The fitness centre, business centre and reception at the San Francisco Financial District Hilton are all open 24 hours a day. Fisherman’s Wharf is 5 minutes' drive from the hotel. The Alcatraz Island ferry is 1.3 miles away.",
+        "description": "Located in the heart of downtown San Francisco, this Hilton is conveniently situated crossroads of the Financial District, Chinatown, and North Beach. It features an on-site restaurant and bar and an award-winning concierge service. A coffee machine and a 55-inch flat-screen smart TV is included all of the air-conditioned rooms at Hilton San Francisco Financial District.",
         "imageName": "hiltonFinancialDistrict"
     }
 ]

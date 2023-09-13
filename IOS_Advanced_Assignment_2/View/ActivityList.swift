@@ -21,7 +21,6 @@ struct ActivityList: View {
                 NavigationLink(destination: ActivityDetail(activity: Activity), label: {
                     ActivityRow(activity: Activity)
                 })
-  
             }
             .navigationTitle("Activities")
         }

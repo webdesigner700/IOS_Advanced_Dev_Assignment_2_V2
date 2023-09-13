@@ -22,11 +22,21 @@ struct FavouriteList: View {
         
         NavigationView {
             
-            List(filteredAccomodations) {
-                accomodation in
-                AccomodationRow(accomodation: accomodation)
+            if !filteredAccomodations.isEmpty {
+                
+                List(filteredAccomodations) {
+                    accomodation in
+                    AccomodationRow(accomodation: accomodation)
+                }
+                .navigationTitle("Favourites")
             }
-            .navigationTitle("Favourite Accomodations")
+            else {
+                Text("No Favourite Accomodations to display!")
+                    .font(.headline)
+                    .foregroundColor(.gray)
+                    .padding()
+                    .navigationBarTitle("Favourites")
+            }
         }
     }
 }

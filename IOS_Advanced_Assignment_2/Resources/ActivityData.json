@@ -9,7 +9,7 @@
             "longitude": 122.4783,
             "latitude": 37.8199
         },
-        "description": "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the U.S. city of San Francisco, California—the northern tip of the San Francisco Peninsula—to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait. It also carries pedestrian and bicycle traffic, and is designated as part of U.S. Bicycle Route 95. Recognized by the American Society of Civil Engineers as one of the Wonders of the Modern World,[7] the bridge is one of the most internationally recognized symbols of San Francisco and California.",
+        "description": "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the U.S. city of San Francisco, California—the northern tip of the San Francisco Peninsula—to Marin County, carrying both U.S. Route 101 and California State Route 1 across the strait.",
         "imageName": "goldenGateBridge"
     },
     
@@ -23,7 +23,7 @@
             "longitude": 122.4230,
             "latitude": 37.8270
         },
-        "description": "Alcatraz Island is a small island 1.25 miles (2.01 km) offshore from San Francisco, California, United States.[1] The island was developed in the mid-19th century with facilities for a lighthouse, a military fortification, and a military prison. In 1934, the island was converted into a federal prison, Alcatraz Federal Penitentiary. The strong currents around the island and cold water temperatures made escape nearly impossible, and the prison became one of the most notorious in American history.[4] The prison closed in 1963, and the island is now a major tourist attraction.",
+        "description": "Alcatraz Island is a small island 1.25 miles (2.01 km) offshore from San Francisco, California, United States. The island was developed in the mid-19th century with facilities for a lighthouse, a military fortification, and a military prison. In 1934, the island was converted into a federal prison, Alcatraz Federal Penitentiary.",
         "imageName": "alcatrazIsland"
     },
     
@@ -37,7 +37,7 @@
             "longitude": 122.4058,
             "latitude": 37.8024
         },
-        "description": "Coit Tower (also known as the Coit Memorial Tower) is a 210-foot (64 m) tower in the Telegraph Hill neighborhood of San Francisco, California, overlooking the city and San Francisco Bay. The tower, in the city's Pioneer Park, was built between 1932 and 1933 using Lillie Hitchcock Coit's bequest to beautify the city of San Francisco. It was added to the National Register of Historic Places on January 29, 2008.",
+        "description": "Coit Tower (also known as the Coit Memorial Tower) is a 210-foot (64 m) tower in the Telegraph Hill neighborhood of San Francisco, California, overlooking the city and San Francisco Bay. The tower, in the city's Pioneer Park, was built between 1932 and 1933 using Lillie Hitchcock Coit's bequest to beautify the city of San Francisco.",
         "imageName": "coitTower"
     },
     
@@ -51,7 +51,7 @@
             "longitude": 122.4098,
             "latitude": 37.8087
         },
-        "description": "Pier 39 is a shopping center and popular tourist attraction built on a pier in San Francisco, California. At Pier 39, there are shops, restaurants, a video arcade, street performances, the Aquarium of the Bay, virtual 3D rides, and views of California sea lions hauled out on docks on Pier 39's marina. A two-story carousel is one of the pier's more dominant features, although it is not directly visible from the street and sits towards the end of the pier. The family-oriented entertainment and presence of marine mammals make this a popular tourist location for families with kids.",
+        "description": "Pier 39 is a shopping center and popular tourist attraction built on a pier in San Francisco, California. At Pier 39, there are shops, restaurants, a video arcade, street performances, the Aquarium of the Bay, virtual 3D rides, and views of California sea lions hauled out on docks on Pier 39's marina. A two-story carousel is one of the pier's more dominant features, although it is not directly visible from the street and sits towards the end of the pier.",
         "imageName": "pier39"
     }
 ]

@@ -19,9 +19,7 @@ struct AccomodationList: View {
                 
                 NavigationLink(destination: AccomodationDetail(accomodation: Accomodation), label: {
                     AccomodationRow(accomodation: Accomodation)
-                })
-                
-                
+                })             
             }
             .navigationTitle("Accomodations")
         }

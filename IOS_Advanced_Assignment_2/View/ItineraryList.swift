@@ -24,11 +24,21 @@ struct ItineraryList: View {
         
         NavigationView {
             
-            List(filteredActivities) {
-                activity in
-                ActivityRow(activity: activity)
+            if !filteredActivities.isEmpty {
+                
+                List(filteredActivities) {
+                    activity in
+                    ActivityRow(activity: activity)
+                }
+                .navigationTitle("Itinerary Activities")
             }
-            .navigationTitle("Itinerary Activities")
+            else {
+                Text("No Activities to display!")
+                    .font(.headline)
+                    .foregroundColor(.gray)
+                    .padding()
+                    .navigationBarTitle("Itinerary Activities")
+            }
         }
     }
     
