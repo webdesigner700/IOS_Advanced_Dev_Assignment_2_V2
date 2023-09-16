@@ -9,7 +9,13 @@ import Foundation
 import Combine
 
 
+// A swift class called ActivityModelData is defined to provide an array of Activities to all the views in the heirarchy.
+
 final class ActivityModelData: ObservableObject {
+    
+    // The Activiites array is creates as a Published variable so that all the views in the heirarchy will be notified if any changed take place with the Activities array members.
+    
+    // The load fucntion is use to load the activity data from the JSON file "ActivityData" 
     
     @Published var Activities: [Activity] = load("ActivityData.json")
     
