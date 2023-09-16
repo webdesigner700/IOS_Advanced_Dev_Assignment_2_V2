@@ -42,7 +42,7 @@ struct ActivityRow: View {
 
 struct ActivityRow_Previews: PreviewProvider {
     
-    // A static variable called "Activies" is created that will hold the Activities Array accessed from the ActivityModelData Observable Objct.
+    // A static variable called "Activies" is created that will hold the Activities Array accessed from the ActivityModelData Observable Object.
     
     static var Activities = ActivityModelData().Activities
     

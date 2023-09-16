@@ -9,9 +9,13 @@ import SwiftUI
 
 struct AccomodationRow: View {
     
+    // The "accomodation" variable stores the accomodation sample data provided by the Preview Provider initializer.
+    
     var accomodation: Accomodation
     
     var body: some View {
+        
+        // A HStack is created to represent a row of information about an accomodation.
         
         HStack() {
             
@@ -38,11 +42,14 @@ struct AccomodationRow: View {
 
 struct AccomodationRow_Previews: PreviewProvider {
     
+    // A static variable called "Accomodations" is created that will hold the Accomodations Array accessed from the AccomodationModelData Observable Object.
+    
     static var Accomodations = AccomodationModelData().Accomodations
     
-    // The reason this static variable is initialised in this file is becuase we want an individual accomodation data from the model data.
     
     static var previews: some View {
-        AccomodationRow(accomodation: Accomodations[1])
+        AccomodationRow(accomodation: Accomodations[0])
+        
+        // An accomodation sample data is passed as an initializer for the preview from the Accomodations Array.
     }
 }

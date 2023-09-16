@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ActivityList: View {
     
-    // The varibale of the type ActivtyModelData is accessed through the environment. This variable "activityModelData" can be used to access the Published array "Activities" (defined in ModelData Swift file)
+    // The varibale activityModelData is accessed through the environment. This variable can be used to access the Published array "Activities" (defined in ModelData Swift file)
     
     @EnvironmentObject var activityModelData: ActivityModelData
     
@@ -19,7 +19,7 @@ struct ActivityList: View {
         
         NavigationStack {
             
-            // Here, a custom List View is used to display the array of activities from the Activites array. This Activities Array is accessed from the EnviironmentObject activityModelData. For each item in the Activities array, The NavigationLink to the ActivityDetail view is defined and the label which is the ActivityRow view is defined.
+            // Here, a custom List View is used to display the array of activities from the Activites array. This Array is accessed from the EnvironmentObject activityModelData. For each item in the Activities array, The NavigationLink to the ActivityDetail view is defined and the label which is the ActivityRow view is defined.
             
             // Both the ActivityRow and ActivityDetail views require an activity element from the Activities Array as an initializer.
             
@@ -37,10 +37,6 @@ struct ActivityList: View {
 }
 
 struct ActivityList_Previews: PreviewProvider {
-    
-    // A static instance of the ActivityModelData class is created for the Preview.
-    
-    static let activityModelData = ActivityModelData()
     
     static var previews: some View {
         ActivityList()
