@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ActivityList: View {
     
-    // The varibale activityModelData is accessed through the environment. This variable can be used to access the Published array "Activities" (defined in ModelData Swift file)
+    // The variable activityModelData is accessed through the environment. This variable can be used to access the Published array "Activities" (defined in ModelData Swift file)
     
     @EnvironmentObject var activityModelData: ActivityModelData
     
