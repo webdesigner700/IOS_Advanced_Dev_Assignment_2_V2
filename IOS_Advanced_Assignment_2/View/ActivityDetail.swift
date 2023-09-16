@@ -36,15 +36,18 @@ struct ActivityDetail: View {
             VStack {
                 
                 MapView(coordinate: activity.activityCoordinate)
-                    .frame(height: 280)
-                    .ignoresSafeArea(edges: .top)
+                    .frame(height: 200)
                     .cornerRadius(16)
+                    .ignoresSafeArea(edges: .top)
+    
+                // When the frame height is decreasing, the height of the map is decreasing from the top and not from the bottom
                 
                 ImageView(image: activity.image)
                     .offset(y: -120)
-                    .padding(.bottom, -130)
+                    .padding(.bottom, -120)
+                    // This padding value is not affecting anything.
                 
-                VStack(spacing: 8) {
+                VStack() {
                     
                     Text(activity.name)
                         .font(.largeTitle)
@@ -61,7 +64,7 @@ struct ActivityDetail: View {
                             .font(.headline)
                         
                     }
-                    .padding(.horizontal, 16)
+                    .padding([.leading, .bottom, .trailing], 12)
                 }
                 .padding(.horizontal, 16)
                 
@@ -95,7 +98,11 @@ struct ActivityDetail: View {
                     Text(activity.description)
                         .font(.body)
                 }
-                .padding(.horizontal, 16)
+                .padding()
+                .background(
+                    Rectangle()
+                        .fill(Color(hue: 0.678, saturation: 0.08, brightness: 0.861)) // Stroke style
+                )
                 
             }
             .navigationBarTitle("Activity Details", displayMode: .inline)

@@ -19,7 +19,9 @@ struct AccomodationDetail: View {
         
     }
     
-    @State private var isPresentingMessage: Bool = false
+    @State private var addingToFavourites: Bool = false
+    
+    @State private var notAddingToFavourites: Bool = false
     
     var body: some View {
         
@@ -55,13 +57,47 @@ struct AccomodationDetail: View {
                     .padding([.leading, .bottom, .trailing], 12)
                 }
                 .padding(.horizontal, 16)
-                
-                HStack {
+                    
+                    // This button appears only if the accomodation is not in favourites
+                    
+                if (accomodation.inItinerary) {
+                    // If the accomodation is already in the itinerary
                     Button(action: {
+                        
+                        notAddingToFavourites = true
+                        
+                        accomodationModelData.Accomodations[accomodationIndex].inItinerary.toggle()
+                        
+                        
+                    }) {
+                        HStack {
+                            Image(systemName: "minus.circle")
                             
-                            
-                        isPresentingMessage = true
-                            
+                            Text("Remove from Favourites")
+                                .fontWeight(.semibold)
+                                .font(.title2)
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 8)
+                    .frame(height: 40.0)
+                    .fontWeight(.semibold)
+                    .font(.title2)
+                    .alert(isPresented: $notAddingToFavourites, content: {
+                        Alert(
+                            title: Text("Removed"),
+                            message: Text("You have successfully removed this accomodation from your itinerary"),
+                            dismissButton: .default(Text("OK"))
+                        )
+                        
+                    })
+                }
+                else {
+                    Button(action: {
+                        
+                        
+                        addingToFavourites = true
+                        
                         accomodationModelData.Accomodations[accomodationIndex].inItinerary.toggle()
                         
                         
@@ -79,7 +115,7 @@ struct AccomodationDetail: View {
                     .frame(height: 40.0)
                     .fontWeight(.semibold)
                     .font(.title2)
-                    .alert(isPresented: $isPresentingMessage, content: {
+                    .alert(isPresented: $addingToFavourites, content: {
                         Alert(
                             title: Text("Added"),
                             message: Text("You have successfully added this accomodation to your itinerary"),
@@ -88,10 +124,7 @@ struct AccomodationDetail: View {
                         
                     })
                 }
-                .background(
-                    Rectangle()
-                        .stroke(Color.blue, lineWidth: 2) // Stroke style
-                )
+                // This is the HStack bracket
                 
                 VStack(alignment: .leading, spacing: 8) {
                     

@@ -45,6 +45,7 @@ struct LocationDetail: View {
                         }
                         .padding(.horizontal, 16)
                     }
+                    .padding(.horizontal, 16)
                     
                     NavigationLink(destination: ActivityList(), label: {
                         

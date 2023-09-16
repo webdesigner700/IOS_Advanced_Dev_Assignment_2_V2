@@ -9,7 +9,7 @@
             "longitude": -122.40897,
             "latitude": 37.78729
         },
-        "description": "This San Francisco hotel is located in Union Square, a 5-minute walk from the Powell Street cable car line. It offers an outdoor pool and rooms with an MP3 connection.Guests will also have access to an on-site fitness center and dry sauna. Each classically-designed room at the Union Square Handlery is equipped with a flat-screen cable TV and mini-refrigerator.",
+        "description": "This San Francisco hotel is located in Union Square, a 5-minute walk from the Powell Street cable car line. It offers an outdoor pool and rooms with an MP3 connection.",
         "imageName": "handleryUnionSquare"
     },
     
@@ -23,7 +23,7 @@
             "longitude": -122.40897,
             "latitude": 37.78729
         },
-        "description": "Just 10 minutes' walk from Union Square and the Financial District, this luxury hotel offers on-site dining. A fitness centre is also available. Rooms at The Ritz-Carlton, San Francisco offer a flat-screen TV. En suite bathrooms include an Italian marble bath tub, complimentary luxury soap and shampoo products, bathrobes and slippers.",
+        "description": "Just 10 minutes' walk from Union Square and the Financial District, this luxury hotel offers on-site dining. A fitness centre is also available. Rooms at The Ritz-Carlton, San Francisco offer a flat-screen TV.",
         "imageName": "theRitzCarlton"
     },
     
@@ -37,7 +37,7 @@
             "longitude": -122.40844,
             "latitude": 37.78967
         },
-        "description": "This hotel, located in the center of San Francisco, is 0.7 miles from both the Moscone Center and the Financial District. It offers a well-equipped fitness centre and chic, modern rooms. All guest rooms include a HDTV and MP3 dock. Tea and coffee making facilities are offered with each room of San Francisco Marriott Union Square.",
+        "description": "This hotel, located in the center of San Francisco, is 0.7 miles from both the Moscone Center and the Financial District. It offers a well-equipped fitness centre and chic, modern rooms. All guest rooms include a HDTV and MP3 dock.",
         "imageName": "marriotUnionSquare"
     },
     
@@ -51,7 +51,7 @@
             "longitude": -122.40411,
             "latitude": 37.79544
         },
-        "description": "Located in the heart of downtown San Francisco, this Hilton is conveniently situated crossroads of the Financial District, Chinatown, and North Beach. It features an on-site restaurant and bar and an award-winning concierge service. A coffee machine and a 55-inch flat-screen smart TV is included all of the air-conditioned rooms at Hilton San Francisco Financial District.",
+        "description": "Located in the heart of downtown San Francisco, this Hilton is conveniently situated crossroads of the Financial District, Chinatown, and North Beach. It features a restaurant and an award-winning concierge service.",
         "imageName": "hiltonFinancialDistrict"
     }
 ]

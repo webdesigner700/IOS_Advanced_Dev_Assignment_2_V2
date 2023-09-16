@@ -17,7 +17,7 @@ struct AccomodationRow: View {
             
             accomodation.image
                 .resizable()
-                .frame(width: 140, height: 140)
+                .frame(width: 120, height: 120)
                 .cornerRadius(10)
                 .shadow(radius: 5)
             
