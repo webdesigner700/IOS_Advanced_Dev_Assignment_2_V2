@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ActivityList: View {
     
-    // The activityModelData instance of the final class ActivityModelData is accessed here through the environment as the StateObject property wrapper is used to define the actiivtyModelData instance in the Swift UI file "IOS_Advanced_Assignment_2App".
+    // The varibale of the type ActivtyModelData is accessed through the environment. This variable "activityModelData" can be used to access the Published array "Activities" (defined in ModelData Swift file)
     
     @EnvironmentObject var activityModelData: ActivityModelData
     
@@ -38,7 +38,7 @@ struct ActivityList: View {
 
 struct ActivityList_Previews: PreviewProvider {
     
-    // A static instance of the activityModelData object is created for the Preview.
+    // A static instance of the ActivityModelData class is created for the Preview.
     
     static let activityModelData = ActivityModelData()
     

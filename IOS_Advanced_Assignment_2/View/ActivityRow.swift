@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ActivityRow: View {
     
+    // The "activity" variable stores the activity sample data provided by the Preview Provider initializer.
+    
     var activity: Activity
     
     var body: some View {
+        
+        // A HStack is created to represent a row of information about an activity.
         
         HStack() {
             
@@ -38,10 +42,14 @@ struct ActivityRow: View {
 
 struct ActivityRow_Previews: PreviewProvider {
     
+    // A static variable called "Activies" is created that will hold the Activities Array accessed from the ActivityModelData Observable Objct.
+    
     static var Activities = ActivityModelData().Activities
     
     static var previews: some View {
         ActivityRow(activity: Activities[0])
             .previewLayout(.sizeThatFits)
+        
+        // An activity sample data is passed as an initializer for the preview from the Activities Array.
     }
 }

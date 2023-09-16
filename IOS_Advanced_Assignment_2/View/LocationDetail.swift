@@ -20,13 +20,13 @@ struct LocationDetail: View {
                 
             VStack(spacing: 16) {
                 
-                // A map is displayed using the custom "MapView()" SwfitUI view. This custom view is created in the MapView SwiftUI file. The parameter values provided for this MapView custom view are the coordinates for San Francisco.
+                // A map is displayed using the custom MapView component. This custom view is created in the "MapView" SwiftUI file. The parameter values provided for this MapView custom view are the coordinates for San Francisco.
                 
                 MapView(coordinate: CLLocationCoordinate2D(latitude: 37.773972, longitude: -122.431297))
                     .frame(height: 250)
                     .ignoresSafeArea(edges: .top)
                 
-                // The ImageView custom view is used to display an image of San Francisco. The image of San Francisco can be foudn in the assets folder. The various modifiers used to display the image can be accessed through the ImageView SwiftUI file.
+                // An image is displayed using the custom ImageView component. The imageView component takes in a parameter of the tupe "Image". The various modifiers used to display the image can be accessed through the ImageView SwiftUI file.
                 
                 ImageView(image: Image("sanFrancisco"))
                     .offset(y: -120)
