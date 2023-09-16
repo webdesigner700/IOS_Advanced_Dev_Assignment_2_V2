@@ -62,67 +62,79 @@ struct AccomodationDetail: View {
                     
                 if (accomodation.inItinerary) {
                     // If the accomodation is already in the itinerary
-                    Button(action: {
-                        
-                        notAddingToFavourites = true
-                        
-                        accomodationModelData.Accomodations[accomodationIndex].inItinerary.toggle()
-                        
-                        
-                    }) {
-                        HStack {
-                            Image(systemName: "minus.circle")
+                    HStack {
+                        Button(action: {
                             
-                            Text("Remove from Favourites")
-                                .fontWeight(.semibold)
-                                .font(.title2)
+                            notAddingToFavourites = true
+                            
+                            accomodationModelData.Accomodations[accomodationIndex].inItinerary.toggle()
+                            
+                            
+                        }) {
+                            HStack {
+                                Image(systemName: "minus.circle")
+                                
+                                Text("Remove from Favourites")
+                                    .fontWeight(.semibold)
+                                    .font(.title2)
+                            }
                         }
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
+                        .frame(height: 40.0)
+                        .fontWeight(.semibold)
+                        .font(.title2)
+                        .alert(isPresented: $notAddingToFavourites, content: {
+                            Alert(
+                                title: Text("Removed"),
+                                message: Text("You have successfully removed this accomodation from your itinerary"),
+                                dismissButton: .default(Text("OK"))
+                            )
+                            
+                        })
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .frame(height: 40.0)
-                    .fontWeight(.semibold)
-                    .font(.title2)
-                    .alert(isPresented: $notAddingToFavourites, content: {
-                        Alert(
-                            title: Text("Removed"),
-                            message: Text("You have successfully removed this accomodation from your itinerary"),
-                            dismissButton: .default(Text("OK"))
-                        )
-                        
-                    })
+                    .background(
+                        Rectangle()
+                            .stroke(Color.blue, lineWidth: 2) // Adjust color and line width as needed
+                    )
                 }
                 else {
-                    Button(action: {
-                        
-                        
-                        addingToFavourites = true
-                        
-                        accomodationModelData.Accomodations[accomodationIndex].inItinerary.toggle()
-                        
-                        
-                    }) {
-                        HStack {
-                            Image(systemName: "plus.circle")
+                    HStack {
+                        Button(action: {
                             
-                            Text("Add to Favourites")
-                                .fontWeight(.semibold)
-                                .font(.title2)
+                            
+                            addingToFavourites = true
+                            
+                            accomodationModelData.Accomodations[accomodationIndex].inItinerary.toggle()
+                            
+                            
+                        }) {
+                            HStack {
+                                Image(systemName: "plus.circle")
+                                
+                                Text("Add to Favourites")
+                                    .fontWeight(.semibold)
+                                    .font(.title2)
+                            }
                         }
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
+                        .frame(height: 40.0)
+                        .fontWeight(.semibold)
+                        .font(.title2)
+                        .alert(isPresented: $addingToFavourites, content: {
+                            Alert(
+                                title: Text("Added"),
+                                message: Text("You have successfully added this accomodation to your itinerary"),
+                                dismissButton: .default(Text("OK"))
+                            )
+                            
+                        })
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .frame(height: 40.0)
-                    .fontWeight(.semibold)
-                    .font(.title2)
-                    .alert(isPresented: $addingToFavourites, content: {
-                        Alert(
-                            title: Text("Added"),
-                            message: Text("You have successfully added this accomodation to your itinerary"),
-                            dismissButton: .default(Text("OK"))
-                        )
-                        
-                    })
+                    .background(
+                        Rectangle()
+                            .stroke(Color.blue, lineWidth: 2) // Adjust color and line width as needed
+                    )
                 }
                 // This is the HStack bracket
                 

@@ -76,7 +76,7 @@ struct ActivityDetail: View {
                         .fontWeight(.semibold)
                         .padding(.horizontal, 16)
                 }
-                .padding(.horizontal, 16)
+                .padding(.horizontal, 22)
                 .padding(.vertical, 8)
                 .background(
                     Rectangle()
