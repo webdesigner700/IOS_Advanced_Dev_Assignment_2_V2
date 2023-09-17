@@ -1,7 +1,7 @@
 [
     {
         "name": "Handlery Union Sqaure Hotel",
-        "district": "Downtown San Francisco",
+        "district": "Downtown",
         "city": "San Francisco",
         "id": 1001,
         "inItinerary": false,
@@ -43,7 +43,7 @@
     
     {
         "name": "Hilton Financial District",
-        "district": "Financial District, San Francisco",
+        "district": "Financial District",
         "city": "San Francisco",
         "id": 1004,
         "inItinerary": false,

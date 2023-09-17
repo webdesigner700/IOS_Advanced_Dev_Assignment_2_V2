@@ -6,8 +6,8 @@
         "id": 1001,
         "inItinerary": false,
         "coordinates": {
-            "longitude": 122.4783,
-            "latitude": 37.8199
+            "longitude": -122.47829,
+            "latitude": 37.82012
         },
         "description": "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San Francisco Bay and the Pacific Ocean. The structure links the U.S. city of San Francisco, California.",
         "imageName": "goldenGateBridge"
@@ -20,8 +20,8 @@
         "id": 1002,
         "inItinerary": false,
         "coordinates": {
-            "longitude": 122.4230,
-            "latitude": 37.8270
+            "longitude": -122.42302,
+            "latitude": 37.82695
         },
         "description": "Alcatraz Island is a small island 1.25 miles (2.01 km) offshore from San Francisco, California, United States. The island was developed in the mid-19th century with facilities for a lighthouse, a military fortification, and a military prison.",
         "imageName": "alcatrazIsland"
@@ -34,8 +34,8 @@
         "id": 1003,
         "inItinerary": false,
         "coordinates": {
-            "longitude": 122.4058,
-            "latitude": 37.8024
+            "longitude": -122.40586,
+            "latitude": 37.80280
         },
         "description": "Coit Tower (also known as the Coit Memorial Tower) is a 210-foot (64 m) tower in the Telegraph Hill neighborhood of San Francisco, California, overlooking the city and San Francisco Bay. The tower was built between 1932 and 1933.",
         "imageName": "coitTower"
@@ -48,8 +48,8 @@
         "id": 1004,
         "inItinerary": false,
         "coordinates": {
-            "longitude": 122.4098,
-            "latitude": 37.8087
+            "longitude": -122.40981,
+            "latitude": 37.80888
         },
         "description": "Pier 39 is a shopping center and popular tourist attraction built on a pier in San Francisco, California. At Pier 39, there are shops, restaurants, a video arcade, street performances, the Aquarium of the Bay and virtual 3D rides.",
         "imageName": "pier39"
