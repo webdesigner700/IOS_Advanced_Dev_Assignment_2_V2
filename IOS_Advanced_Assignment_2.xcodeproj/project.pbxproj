@@ -89,7 +89,6 @@
 			children = (
 				A160F4032AAA9E1E006D0F4D /* Activity.swift */,
 				A17959EB2AAC30EE00FD383A /* Accomodation.swift */,
-				A160F4052AAA9E27006D0F4D /* ModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +121,7 @@
 		A163CA8D2AA9B3BA009B8016 /* IOS_Advanced_Assignment_2 */ = {
 			isa = PBXGroup;
 			children = (
+				A1DDC6E22AB713CC0021D19D /* ViewModel */,
 				A160F4072AAA9E50006D0F4D /* Resources */,
 				A160F4022AAA9DF5006D0F4D /* Model */,
 				A160F4012AAA9DED006D0F4D /* View */,
@@ -137,6 +137,14 @@
 				A163CA952AA9B3BE009B8016 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1DDC6E22AB713CC0021D19D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A160F4052AAA9E27006D0F4D /* ModelData.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

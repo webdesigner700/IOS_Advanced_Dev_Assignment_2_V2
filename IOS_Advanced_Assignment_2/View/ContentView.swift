@@ -37,7 +37,7 @@ struct ContentView: View {
             FavouriteList()
                 .tabItem() {
                     Image(systemName: "star.circle")
-                    Text("Favorites")
+                    Text("Favourites")
                 }
             
             // The Accomodation page will contain information about the various san Francisco accomodations that the user can choose to stay in
